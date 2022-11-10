@@ -29,7 +29,7 @@ DISCORD_TOKEN=<your Discord token>
 # Discord bot client id
 CLIENT_ID=<your Discord client id>
 # Discord user ID of super admin (access to all admin commands in any server). Can be empty.
-SUPERADMIN_ID=<admin's Discord user id>
+SUPERADMIN_ID=<Discord user id>
 
 # This was inserted by `prisma init`:
 # Environment variables declared in this file are automatically made available to Prisma.
