@@ -1,0 +1,20 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Server {
+  id                 String @id
+  current_num        Int @default(0)
+  peak_num           Int @default(0)
+  total_ruined       Int @default(0)
+  last_counting_user String?
+  counting_channel   String
+}
